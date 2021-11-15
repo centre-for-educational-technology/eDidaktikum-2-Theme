@@ -12,7 +12,7 @@ module.exports = {
         themes: [
             {
                 'mytheme': {
-                    'primary': '#2c1376',
+                    'primary': '#27BC9C',
                     'primary-focus': '#4506cb',
                     'primary-content': '#ffffff',
                     'secondary': '#f000b8',
@@ -21,11 +21,11 @@ module.exports = {
                     'accent': '#37cdbe',
                     'accent-focus': '#2aa79b',
                     'accent-content': '#ffffff',
-                    'neutral': '#3d4451',
+                    'neutral': '#4F6367',
                     'neutral-focus': '#2a2e37',
                     'neutral-content': '#ffffff',
                     'base-100': '#ffffff',
-                    'base-200': '#f9fafb',
+                    'base-200': '#DDD5D0',
                     'base-300': '#d1d5db',
                     'base-content': '#1f2937',
                     'info': '#2094f3',
