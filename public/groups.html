@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/build/tailwind.css">
     <title>Welcome to Tailwind!</title>
 </head>
-<body class="antialiased">
+<body class="antialiased bg-base-200">
 
 
 <!--Nav-->
@@ -106,16 +106,263 @@
 <!--Nav End-->
 
 
+<!--Main Content-->
+
+<main class="content-row">
+
+    <!--    &lt;!&ndash;header&ndash;&gt;-->
+    <!--    <div class="page-title-wrap">-->
+    <!--        <div class="text-center w-full mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20">-->
+    <!--            <h1 class="mb-0 mt-5 text-5xl font-bold text-neutral ">-->
+    <!--                Kõik grupid-->
+    <!--            </h1>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    &lt;!&ndash;header end&ndash;&gt;-->
 
 
+    <!--        <div class="hero">-->
+    <!--            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20">-->
+    <!--                <div class="btn-group">-->
+    <!--                    <button class="btn btn-outline btn-xl">Kõik grupid</button>-->
+    <!--                    <button class="btn btn-outline btn-xl">Minu aktiivsed grupid</button>-->
+    <!--                    <button class="btn btn-outline btn-xl">Minu mitteaktiivsed grupid</button>-->
+    <!--                    <button class="btn btn-outline btn-xl">Otsi gruppi</button>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
 
 
+    <!--        <div class="hero">-->
+    <!--            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20">-->
+    <!--                <nav class="flex flex-col sm:flex-row">-->
+    <!--                    <button class=" py-1.5 px-3.5 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">-->
+    <!--                        #Kõik grupid-->
+    <!--                    </button>-->
+    <!--                    <button class="py-1.5 px-3.5 block hover:text-blue-500 focus:outline-none">-->
+    <!--                        #Minu aktiivsed grupid-->
+    <!--                    </button>-->
+    <!--                    <button class="py-1.5 px-3.5 block hover:text-blue-500 focus:outline-none">-->
+    <!--                        #Minu mitteaktiivsed grupid-->
+    <!--                    </button>-->
+    <!--                    <button class="py-1.5 px-3.5 block hover:text-blue-500 focus:outline-none">-->
+    <!--                        #Otsi gruppi-->
+    <!--                    </button>-->
+    <!--                </nav>-->
+    <!--            </div>-->
+    <!--        </div>-->
 
 
+    <!--tabs beginning-->
+
+    <!--    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>-->
+
+    <!--    <div class="hero flex">-->
+    <!--        <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20">-->
+    <!--            &lt;!&ndash;actual component start&ndash;&gt;-->
+    <!--            <div x-data="setup()">-->
+    <!--                <ul class="flex justify-center items-center">-->
+    <!--                    <template x-for="(tab, index) in tabs" :key="index">-->
+    <!--                        <li class="cursor-pointer py-3 px-4 rounded transition"-->
+    <!--                            :class="activeTab===index ? 'bg-green-500 text-white' : ' text-gray-500'"-->
+    <!--                            @click="activeTab = index"-->
+    <!--                            x-text="tab"></li>-->
+    <!--                    </template>-->
+    <!--                </ul>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <!--    <script>-->
+    <!--        function setup() {-->
+    <!--            return {-->
+    <!--                activeTab: 0,-->
+    <!--                tabs: [-->
+    <!--                    "Kõik grupid",-->
+    <!--                    "Minu aktiivsed grupid",-->
+    <!--                    "Minu mitteaktiivsed grupid",-->
+    <!--                    "Otsi gruppi",-->
+    <!--                ]-->
+    <!--            };-->
+    <!--        };-->
+    <!--    </script>-->
+
+    <!--    &lt;!&ndash;tabs end&ndash;&gt;-->
 
 
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+        <div class="text-center pb-12">
+
+            <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-neutral">
+                Kõik grupid
+            </h1>
+        </div>
 
 
+        <!--tabs beginning-->
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+        <div class="hero flex pb-8">
+            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20">
+                <!--actual component start-->
+                <div x-data="setup()">
+                    <ul class="flex justify-center items-center">
+                        <template x-for="(tab, index) in tabs" :key="index">
+                            <li class="cursor-pointer py-3 px-4 rounded transition"
+                                :class="activeTab===index ? 'bg-green-500 text-white' : ' text-gray-500'"
+                                @click="activeTab = index"
+                                x-text="tab"></li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function setup() {
+                return {
+                    activeTab: 0,
+                    tabs: [
+                        "Kõik grupid",
+                        "Minu aktiivsed grupid",
+                        "Minu mitteaktiivsed grupid",
+                        "Otsi gruppi",
+                    ]
+                };
+            };
+        </script>
+        <!--Tabs end-->
+
+        <div class="flex pb-2 ">
+            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20 ">
+                <div class="dropdown dropdown-hover">
+                    <div tabindex="0" class="m-1 btn">sorteeri</div>
+                    <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a>Item 1</a>
+                        </li>
+                        <li>
+                            <a>Item 2</a>
+                        </li>
+                        <li>
+                            <a>Item 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                <div>
+                    <img class="object-center object-cover h-auto w-full"
+                         src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                         alt="photo">
+                </div>
+                <div class="text-center py-8 sm:py-6">
+                    <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
+                    <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+                    <button class="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-lg rounded-lg focus:border-4 border-indigo-300">
+                        Button
+                    </button>
+
+                </div>
+            </div>
+            <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                <div>
+                    <img class="object-center object-cover h-auto w-full"
+                         src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                         alt="photo">
+                </div>
+                <div class="text-center py-8 sm:py-6">
+                    <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
+                    <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+                    <button class="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-lg rounded-lg focus:border-4 border-indigo-300">
+                        Button
+                    </button>
+                </div>
+            </div>
+            <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                <div>
+                    <img class="object-center object-cover h-auto w-full"
+                         src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
+                         alt="photo">
+                </div>
+                <div class="text-center py-8 sm:py-6">
+                    <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+                    <p class="text-base text-gray-400 font-normal">Dev Ops</p>
+                    <button class="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-lg rounded-lg focus:border-4 border-indigo-300">
+                        Button
+                    </button>
+                </div>
+            </div>
+            <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                <div>
+                    <img class="object-center object-cover h-auto w-full"
+                         src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                         alt="photo">
+                </div>
+                <div class="text-center py-8 sm:py-6">
+                    <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
+                    <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+                    <button class="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-lg rounded-lg focus:border-4 border-indigo-300">
+                        Button
+                    </button>
+                </div>
+            </div>
+            <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                <div>
+                    <img class="object-center object-cover h-auto w-full"
+                         src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                         alt="photo">
+                </div>
+                <div class="text-center py-8 sm:py-6">
+                    <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
+                    <p class="text-base text-gray-400 font-normal">Graphic Designer</p>
+                    <button class="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-lg rounded-lg focus:border-4 border-indigo-300">
+                        Button
+                    </button>
+                </div>
+            </div>
+            <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+                <div>
+                    <img class="object-center object-cover h-auto w-full"
+                         src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
+                         alt="photo">
+                </div>
+                <div class="text-center py-8 sm:py-6">
+                    <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+                    <p class="text-base text-gray-400 font-normal">Dev Ops</p>
+                    <button class="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-lg rounded-lg focus:border-4 border-indigo-300">
+                        Button
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--Pagination-->
+        <div class="flex pb-8 ">
+            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20 ">
+                <div class="btn-group ">
+                    <button class="btn">Previous</button>
+                    <button class="btn">1</button>
+                    <button class="btn btn-active">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">4</button>
+                    <button class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+        <!--Pagination end-->
+
+    </section>
+
+
+</main>
 
 
 <!--Footer-->
