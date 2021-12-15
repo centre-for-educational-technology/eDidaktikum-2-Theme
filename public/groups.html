@@ -13,7 +13,6 @@
 
 <!--Nav-->
 
-
 <nav id="header" class="w-full z-30 top-0 text-white bg-base-200">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
 
@@ -153,14 +152,14 @@
                         Mitteaktiivsed grupid
                     </button>
 
-                    <button class="btn btn-outline btn-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                        </svg>
-                        Otsi gruppi
-                    </button>
+<!--                    <button class="btn btn-outline btn-xl">-->
+<!--                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"-->
+<!--                             stroke="currentColor">-->
+<!--                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"-->
+<!--                                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>-->
+<!--                        </svg>-->
+<!--                        Otsi gruppi-->
+<!--                    </button>-->
 
                     <button class="btn btn-outline btn-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
@@ -175,26 +174,33 @@
         <!--Tabs end-->
 
 
-        <!--Dropdown starts-->
-        <div class="hero">
-            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20 ">
-                <select class="block  w-52 text-gray-700 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
-                        name="animals">
-                    <option value="">
-                        Sorteeri
-                    </option>
-                    <option value="dog">
-                        Värskemad
-                        eespool
-                    </option>
-                    <option value="cat">
-                        Vanemad
-                        eespool
-                    </option>
-                </select>
+        <!--Groups actions start-->
+        <div class="flex mb-5">
+
+            <div class="form-control mr-3 max-w-xs">
+                <label class="input-group">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                        <rect x="0" y="0" width="24" height="24" stroke="none"></rect>
+                        <circle cx="10" cy="10" r="7"/>
+                        <line x1="21" y1="21" x2="15" y2="15"/>
+                    </svg></span>
+                    <input type="text" placeholder="Otsi" class="input input-bordered">
+                </label>
             </div>
+
+            <select class="select select-bordered max-w-xs">
+                <option disabled="disabled" selected="selected">Sorteeri</option>
+                <option>Värskemad eespool</option>
+                <option>Vanemad eespool</option>
+                <option>Pealkiri A-Z</option>
+            </select>
+
         </div>
-        <!--Dropdown ends-->
+
+
+        <!--Groups actions end-->
 
 
         <!--cards beginning-->
