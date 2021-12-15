@@ -110,85 +110,6 @@
 
 <main class="content-row">
 
-    <!--    &lt;!&ndash;header&ndash;&gt;-->
-    <!--    <div class="page-title-wrap">-->
-    <!--        <div class="text-center w-full mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20">-->
-    <!--            <h1 class="mb-0 mt-5 text-5xl font-bold text-neutral ">-->
-    <!--                Kõik grupid-->
-    <!--            </h1>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    &lt;!&ndash;header end&ndash;&gt;-->
-
-
-    <!--        <div class="hero">-->
-    <!--            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20">-->
-    <!--                <div class="btn-group">-->
-    <!--                    <button class="btn btn-outline btn-xl">Kõik grupid</button>-->
-    <!--                    <button class="btn btn-outline btn-xl">Minu aktiivsed grupid</button>-->
-    <!--                    <button class="btn btn-outline btn-xl">Minu mitteaktiivsed grupid</button>-->
-    <!--                    <button class="btn btn-outline btn-xl">Otsi gruppi</button>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-
-    <!--        <div class="hero">-->
-    <!--            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20">-->
-    <!--                <nav class="flex flex-col sm:flex-row">-->
-    <!--                    <button class=" py-1.5 px-3.5 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">-->
-    <!--                        #Kõik grupid-->
-    <!--                    </button>-->
-    <!--                    <button class="py-1.5 px-3.5 block hover:text-blue-500 focus:outline-none">-->
-    <!--                        #Minu aktiivsed grupid-->
-    <!--                    </button>-->
-    <!--                    <button class="py-1.5 px-3.5 block hover:text-blue-500 focus:outline-none">-->
-    <!--                        #Minu mitteaktiivsed grupid-->
-    <!--                    </button>-->
-    <!--                    <button class="py-1.5 px-3.5 block hover:text-blue-500 focus:outline-none">-->
-    <!--                        #Otsi gruppi-->
-    <!--                    </button>-->
-    <!--                </nav>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-
-    <!--tabs beginning-->
-
-    <!--    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>-->
-
-    <!--    <div class="hero flex">-->
-    <!--        <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20">-->
-    <!--            &lt;!&ndash;actual component start&ndash;&gt;-->
-    <!--            <div x-data="setup()">-->
-    <!--                <ul class="flex justify-center items-center">-->
-    <!--                    <template x-for="(tab, index) in tabs" :key="index">-->
-    <!--                        <li class="cursor-pointer py-3 px-4 rounded transition"-->
-    <!--                            :class="activeTab===index ? 'bg-green-500 text-white' : ' text-gray-500'"-->
-    <!--                            @click="activeTab = index"-->
-    <!--                            x-text="tab"></li>-->
-    <!--                    </template>-->
-    <!--                </ul>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <!--    <script>-->
-    <!--        function setup() {-->
-    <!--            return {-->
-    <!--                activeTab: 0,-->
-    <!--                tabs: [-->
-    <!--                    "Kõik grupid",-->
-    <!--                    "Minu aktiivsed grupid",-->
-    <!--                    "Minu mitteaktiivsed grupid",-->
-    <!--                    "Otsi gruppi",-->
-    <!--                ]-->
-    <!--            };-->
-    <!--        };-->
-    <!--    </script>-->
-
-    <!--    &lt;!&ndash;tabs end&ndash;&gt;-->
-
 
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
         <div class="text-center pb-12">
@@ -201,63 +122,86 @@
 
         <!--tabs beginning-->
 
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <div class="hero">
+            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20">
+                <div class="btn-group">
 
-        <div class="hero flex pb-8">
-            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20">
-                <!--actual component start-->
-                <div x-data="setup()">
-                    <ul class="flex justify-center items-center">
-                        <template x-for="(tab, index) in tabs" :key="index">
-                            <li class="cursor-pointer py-3 px-4 rounded transition"
-                                :class="activeTab===index ? 'bg-green-500 text-white' : ' text-gray-500'"
-                                @click="activeTab = index"
-                                x-text="tab"></li>
-                        </template>
-                    </ul>
+                    <button class="btn btn-outline btn-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        Kõik grupid
+                    </button>
+
+                    <button class="btn btn-outline btn-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Aktiivsed grupid
+                    </button>
+
+                    <button class="btn btn-outline btn-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Mitteaktiivsed grupid
+                    </button>
+
+                    <button class="btn btn-outline btn-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        Otsi gruppi
+                    </button>
+
+                    <button class="btn btn-outline btn-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
-
-        <script>
-            function setup() {
-                return {
-                    activeTab: 0,
-                    tabs: [
-                        "Kõik grupid",
-                        "Minu aktiivsed grupid",
-                        "Minu mitteaktiivsed grupid",
-                        "Otsi gruppi",
-                    ]
-                };
-            };
-        </script>
         <!--Tabs end-->
 
-        <div class="flex pb-2 ">
-            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20 ">
-                <div class="dropdown dropdown-hover">
-                    <div tabindex="0" class="m-1 btn">sorteeri</div>
-                    <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
-                        <li>
-                            <a>Item 1</a>
-                        </li>
-                        <li>
-                            <a>Item 2</a>
-                        </li>
-                        <li>
-                            <a>Item 3</a>
-                        </li>
-                    </ul>
-                </div>
+
+        <!--Dropdown starts-->
+        <div class="hero">
+            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20 ">
+                <select class="block  w-52 text-gray-700 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                        name="animals">
+                    <option value="">
+                        Sorteeri
+                    </option>
+                    <option value="dog">
+                        Värskemad
+                        eespool
+                    </option>
+                    <option value="cat">
+                        Vanemad
+                        eespool
+                    </option>
+                </select>
             </div>
         </div>
+        <!--Dropdown ends-->
 
 
+        <!--cards beginning-->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
                 <div>
-                    <img class="object-center object-cover h-auto w-full"
+                    <img class="object-center object-cover h-full"
                          src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
                          alt="photo">
                 </div>
@@ -265,7 +209,8 @@
                     <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
                     <div class="flex justify-center mb-2">
                         <p class="text-base text-gray-400 font-normal mr-1">Private</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+                             viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
@@ -277,7 +222,7 @@
             </div>
             <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
                 <div>
-                    <img class="object-center object-cover h-auto w-full"
+                    <img class="object-center object-cover h-full"
                          src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
                          alt="photo">
                 </div>
@@ -285,7 +230,8 @@
                     <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
                     <div class="flex justify-center mb-2">
                         <p class="text-base text-gray-400 font-normal mr-1">Private</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+                             viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
@@ -297,15 +243,16 @@
             </div>
             <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
                 <div>
-                    <img class="object-center object-cover h-auto w-full"
+                    <img class="object-center object-cover h-full"
                          src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
                          alt="photo">
                 </div>
                 <div class="text-center py-8 sm:py-6">
-                    <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+                    <p class="text-xl text-gray-700 font-bold mb-2">Aktiivõpe informaatikatunnis</p>
                     <div class="flex justify-center mb-2">
                         <p class="text-base text-gray-400 font-normal mr-1">Private</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+                             viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
@@ -316,16 +263,15 @@
                 </div>
             </div>
             <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
-                <div>
-                    <img class="object-center object-cover h-auto w-full"
-                         src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
-                         alt="photo">
-                </div>
+                <img class="object-center object-cover h-full"
+                     src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
+                     alt="photo">
                 <div class="text-center py-8 sm:py-6">
                     <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
                     <div class="flex justify-center mb-2">
                         <p class="text-base text-gray-400 font-normal mr-1">Private</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+                             viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
@@ -336,16 +282,18 @@
                 </div>
             </div>
             <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
-                <div>
-                    <img class="object-center object-cover h-auto w-full"
-                         src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
-                         alt="photo">
-                </div>
+
+                <img class="object-center object-cover h-full"
+                     src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
+                     alt="photo">
+
                 <div class="text-center py-8 sm:py-6">
-                    <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+                    <p class="text-xl text-gray-700 font-bold mb-2">KMX115 Muusikaõpetuse praktika põhikoolis ja
+                        gümnaasiumis</p>
                     <div class="flex justify-center mb-2">
                         <p class="text-base text-gray-400 font-normal mr-1">Private</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+                             viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
@@ -356,16 +304,18 @@
                 </div>
             </div>
             <div class="w-full bg-white rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
-                <div>
-                    <img class="object-center object-cover h-auto w-full"
-                         src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
-                         alt="photo">
-                </div>
+
+                <img class="object-center object-cover h-full"
+                     src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
+                     alt="photo">
+
                 <div class="text-center py-8 sm:py-6">
-                    <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
+                    <p class="text-xl text-gray-700 font-bold mb-2">KAI6016.HR Motivatsioonilised protsessid -
+                        Alushariduse päevaõpe (2021 sügis)</p>
                     <div class="flex justify-center mb-2">
                         <p class="text-base text-gray-400 font-normal mr-1">Private</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
+                             viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                   d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
@@ -378,6 +328,7 @@
 
 
         </div>
+        <!--cards end-->
 
         <!--Pagination-->
         <div class="flex pb-8 ">
