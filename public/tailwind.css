@@ -1,7 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind typography;
 
 .btn {
     @apply rounded-full;
+}
+h1{
+    @apply text-5xl font-bold text-neutral mb-5;
+
+}
+h2{
+    @apply text-3xl font-bold text-neutral mb-5;
+}
+h3{
+    @apply text-2xl mb-5;
 }
