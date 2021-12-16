@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind typography;
+
+
+h1 {
+  @apply text-5xl font-bold text-neutral mb-5;
+
+}
+
+h2 {
+  @apply text-3xl font-bold text-neutral mb-5;
+}
+
+h3 {
+  @apply text-2xl mb-5;
+}
+
+.task-manager {
+  table {
+    table-layout: fixed;
+  }
+
+
+  table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 15vw;
+    background: white;
+  }
+
+  table td {
+    background: #fff;
+    padding: 4px 5px;
+    text-align: left;
+  }
+
+  table thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    text-align: left;
+  }
+
+  table tbody th {
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 1;
+    text-align: left;
+  }
+
+  [role="region"][aria-labelledby][tabindex] {
+    width: 100%;
+    max-height: 98vh;
+    overflow: auto;
+  }
+
+  [role="region"][aria-labelledby][tabindex]:focus {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    outline: 0;
+  }
+
+}
