@@ -110,83 +110,85 @@
 
 <main class="content-row">
 
-
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
-        <div class="text-center pb-12">
-
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-14">
+        <div class="text-center">
             <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-neutral">
-                Erialane eesti keel tulevasele õpetajale
+                Informaatika didaktika
             </h1>
+        </div>
         </div>
 
 
         <!--tabs beginning-->
+        <div class="hero">
+            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20 mb-10 mt-4 ">
+                <div class="btn-group">
 
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
-        <div class="hero flex pb-8">
-            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20">
-                <!--actual component start-->
-                <div x-data="setup()">
-                    <ul class="flex justify-center items-center">
-                        <template x-for="(tab, index) in tabs" :key="index">
-                            <li class="cursor-pointer py-3 px-4 rounded transition"
-                                :class="activeTab===index ? 'bg-green-500 text-white' : ' text-gray-500'"
-                                @click="activeTab = index"
-                                x-text="tab"></li>
-                        </template>
-                    </ul>
+                    <button class="btn btn-outline btn-xl btn-active ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                        Kuva
+                    </button>
+                    <button class="btn btn-outline btn-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                        </svg>
+                        Muuda
+                    </button>
+                    <button class="btn btn-outline btn-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                        Õppematerjalid
+                    </button>
+                    <button class="btn btn-outline btn-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                        Liikmed
+                    </button>
+                    <button class="btn btn-outline btn-xl ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+                        </svg>
+                        Ülesannete Haldur
+                    </button>
+                    <button class="btn btn-outline btn-xl">...</button>
                 </div>
             </div>
         </div>
-
-        <script>
-            function setup() {
-                return {
-                    activeTab: 0,
-                    tabs: [
-                        "Kuva",
-                        "Muda",
-                        "Failid",
-                        "Õppematerjalid",
-                        "Uudised",
-                        "...",
-                    ]
-                };
-            };
-        </script>
         <!--Tabs end-->
 
-        <!--        <div class="flex pb-2 ">-->
-        <!--            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20 ">-->
-        <!--                <div class="dropdown dropdown-hover">-->
-        <!--                    <div tabindex="0" class="m-1 btn">sorteeri</div>-->
-        <!--                    <ul tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">-->
-        <!--                        <li>-->
-        <!--                            <a>Item 1</a>-->
-        <!--                        </li>-->
-        <!--                        <li>-->
-        <!--                            <a>Item 2</a>-->
-        <!--                        </li>-->
-        <!--                        <li>-->
-        <!--                            <a>Item 3</a>-->
-        <!--                        </li>-->
-        <!--                    </ul>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
+
+
+
 
 
     </section>
 
     <div class="max-w-screen-lg mx-auto">
 
-        <main class="mt-10">
+        <main class="mt-6">
 
             <div class="mb-4 md:mb-0 w-full mx-auto relative">
 
-                <img src="https://images.unsplash.com/photo-1587614387466-0a72ca909e16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
-                     class="w-full object-cover lg:rounded" style="height: 20em;"/>
+                <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                     class="w-full object-cover lg:rounded" style="height: 26em;"/>
             </div>
 
             <div class="flex flex-col lg:flex-row lg:space-x-12">
@@ -204,7 +206,8 @@
                         nii suuliselt kui ka kirjalikult.
                     </div>
 
-                    <h2 class="text-2xl text-gray-800 font-semibold mb-4 mt-4">Kokkuvõte</h2>
+                    <h2 class="text-2xl text-gray-800 font-semibold mb-4 mt-10">Kokkuvõte</h2>
+                    <div class="mb-20">
                     <p class="pb-6">
                     Käesolev kursus on loodud Tallinna Ülikoolis õppivate tulevaste õpetajate, lasteaiakasvatajate ja
                     haridustöötajate erialase riigikeele oskuse parandamiseks PRÕMi tegevuse 8.8 "Keeleõppetegevused
@@ -223,25 +226,22 @@
                     <p class="pb-6">
                         Kursus on loodud PRÕMi tegevuse 8.8 "Keeleõppetegevused edukamaks toimetulekuks tööturul"
                         toel.</p>
+                    </div>
                 </div>
 
-                <div class="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm">
-                    <div class="p-4 border-t border-b md:border md:rounded">
-                        <div class="flex py-2">
-<!--                            <img src="https://randomuser.me/api/portraits/men/97.jpg"-->
-<!--                                 class="h-10 w-10 rounded-full mr-2 object-cover"/>-->
+                <div class="w-full lg:w-2/12 m-auto mt-12 max-w-screen-sm shadow-xl">
+                    <div class="p-4 ">
+                        <div class=" py-2 text-center">
+
                             <div>
-                                <p class="font-semibold text-gray-700 text-sm"> Ainekood</p>
-<!--                                <p class="font-semibold text-gray-600 text-xs"> Editor </p>-->
+                                <p class="font-semibold "> Ainekood</p>
+
                             </div>
                         </div>
-                        <p class="text-gray-700 py-3">
-                            Erialane eesti keel tulevasele õpetajale
+                        <p class=" py-3 text-center">
+                            EK2039NS
                         </p>
-<!--                        <button class="px-2 py-1 text-gray-100 bg-green-700 flex w-full items-center justify-center rounded">-->
-<!--                            Follow-->
-<!--                            <i class='bx bx-user-plus ml-2'></i>-->
-<!--                        </button>-->
+
                     </div>
                 </div>
 
