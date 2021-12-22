@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/build/tailwind.css">
     <title>Welcome to Tailwind!</title>
 </head>
-<body class="antialiased bg-base-200">
+<body class="antialiased bg-base-200 gradient">
 
 
 <!--Nav-->
 
 
-<nav id="header" class="w-full z-30 top-0 text-white bg-base-200">
+<nav id="header" class="w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
 
 
@@ -111,15 +111,15 @@
         <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <!--Left Col-->
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                <p class="uppercase tracking-loose w-full">Mis on eDidaktikum?</p>
+                <p class="uppercase text-white tracking-loose w-full">Mis on eDidaktikum?</p>
                 <h1 class="my-4 text-5xl font-bold leading-tight">
                     Õppimise ja õpetamise keskkond
                 </h1>
-                <p class="leading-normal text-2xl mb-8">
+                <p class="leading-normal text-white text-2xl mb-8">
                     eDidaktikum pakub värsket pilti haridusmaailmas toimuvast
                 </p>
 
-                <button class="btn btn-primary mt-2">Logi sisse HarID-ga</button>
+                <button class="btn mt-2">Logi sisse HarID-ga</button>
             </div>
             <!--Right Col-->
             <div class="w-full md:w-3/5 py-6 text-center">
@@ -204,11 +204,9 @@
     </section>
 
 
-
-
     <!--Table start-->
 
-    <div class="container mx-auto px-6 p-6  dark:bg-gray-800">
+    <div class="container mx-auto px-6 p-6">
 
         <div class="flex flex-wrap my-12 dark:text-white">
             <div class="w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8">
@@ -224,56 +222,65 @@
                     </div>
                 </div>
                 <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
-                    Kasutajale kuvatakse kõik viimased olulised uuendused, näiteks talle antud ülesanded koos tähtaegadega.
+                    Kasutajale kuvatakse kõik viimased olulised uuendused, näiteks talle antud ülesanded koos
+                    tähtaegadega.
                 </p>
             </div>
             <div class="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-8">
                 <div class="flex items-center mb-6">
-                    <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-primary" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
-                        </path>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 inline-block w-5 mr-2 stroke-current"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                     <div class="ml-4 text-xl">
                         Ülesannete staatus
                     </div>
                 </div>
                 <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
-                    Iga ülesanne sisaldab staatust (kas sooritatud või mitte), lisatud on failid ning ajaveebipostitused.
+                    Iga ülesanne sisaldab staatust (kas sooritatud või mitte), lisatud on failid ning
+                    ajaveebipostitused.
                 </p>
             </div>
             <div class="w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8">
                 <div class="flex items-center mb-6">
-                    <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-primary" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
-                        </path>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 inline-block w-5 mr-2 stroke-current"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                     <div class="ml-4 text-xl">
                         Sobiv kõigile
                     </div>
                 </div>
                 <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
-                    Mitteformaalse grupi võivad luua nii projektimeeskonnad, aineõpetajad, ainedidaktikud ülikoolide üleselt, didaktikalaborite juhid jne.
+                    Mitteformaalse grupi võivad luua nii projektimeeskonnad, aineõpetajad, ainedidaktikud ülikoolide
+                    üleselt, didaktikalaborite juhid jne.
                 </p>
             </div>
             <div class="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8">
                 <div class="flex items-center mb-6">
-                    <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-primary" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
-                        </path>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 inline-block w-5 mr-2 stroke-current"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                     </svg>
                     <div class="ml-4 text-xl">
                         Mitteformaalne grupp
                     </div>
                 </div>
                 <p class="leading-loose text-gray-500 dark:text-gray-200 text-md">
-                    Mitteformaalse grupi võivad luua nii projektimeeskonnad, aineõpetajad, ainedidaktikud ülikoolide üleselt, didaktikalaborite juhid jne.
+                    Mitteformaalse grupi võivad luua nii projektimeeskonnad, aineõpetajad, ainedidaktikud ülikoolide
+                    üleselt, didaktikalaborite juhid jne.
                 </p>
             </div>
             <div class="w-full border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8">
                 <div class="flex items-center mb-6">
-                    <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-primary" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
-                        </path>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 inline-block w-5 mr-2 stroke-current"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                     </svg>
                     <div class="ml-4 text-xl">
                         Kollektsioonid
@@ -285,9 +292,10 @@
             </div>
             <div class="w-full md:w-1/2 lg:w-1/3 p-8">
                 <div class="flex items-center mb-6">
-                    <svg width="20" height="20" fill="currentColor" class="h-6 w-6 text-primary" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
-                        </path>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 inline-block w-5 mr-2 stroke-current"
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
                     </svg>
                     <div class="ml-4 text-xl">
                         Videoklotsid
@@ -308,10 +316,10 @@
         <div class="w-full text-center pb-8">
 
 
-            <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-12">
+            <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white mb-12">
                 Õppejõud ja õppijad arvavad
             </h1>
-           <!-- <p class=" font-normal text-base">eDidaktikum on väga innovaatiline ja praktiline. Loe õppejõudude, õpetajate ja tudengite arvamust.</p>-->
+            <!-- <p class=" font-normal text-base">eDidaktikum on väga innovaatiline ja praktiline. Loe õppejõudude, õpetajate ja tudengite arvamust.</p>-->
         </div>
         <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="bg-white rounded-lg p-6 shadow-2xl">
@@ -384,205 +392,41 @@
     <!--Testimonials end-->
 
 
-    <section class="bg-white border-b py-8">
-        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-            <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-                Title
-            </h1>
-            <div class="w-full mb-4">
-                <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-            </div>
-            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                    <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                        <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                            xGETTING STARTED
-                        </p>
-                        <div class="w-full font-bold text-xl text-gray-800 px-6">
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                        <p class="text-gray-800 text-base px-6 mb-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo
-                            posuere et sit amet ligula.
-                        </p>
-                    </a>
-                </div>
-                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                    <div class="flex items-center justify-start">
-                        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Action
-                        </button>
+    <!--  Section with 2 columns -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/2 px-4">
+                    <div class="w-full">
+                        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-12">
+                            Partnerid
+                        </h1>
                     </div>
-                </div>
-            </div>
-            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                    <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                        <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                            xGETTING STARTED
-                        </p>
-                        <div class="w-full font-bold text-xl text-gray-800 px-6">
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                        <p class="text-gray-800 text-base px-6 mb-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo
-                            posuere et sit amet ligula.
-                        </p>
-                    </a>
-                </div>
-                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                    <div class="flex items-center justify-center">
-                        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Action
-                        </button>
+                    <div class="w-full">
+                        <img class="w-full"
+                             src="img/ed_partners.png"
+                             alt="photo">
                     </div>
+
                 </div>
-            </div>
-            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                    <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                        <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                            xGETTING STARTED
-                        </p>
-                        <div class="w-full font-bold text-xl text-gray-800 px-6">
-                            Lorem ipsum dolor sit amet.
-                        </div>
-                        <p class="text-gray-800 text-base px-6 mb-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo
-                            posuere et sit amet ligula.
-                        </p>
-                    </a>
-                </div>
-                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                    <div class="flex items-center justify-end">
-                        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Action
-                        </button>
+                <div class="w-full md:w-1/2 px-4">
+                    <div class="w-full">
+                        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 mb-12">
+                            Toetajad
+                        </h1>
                     </div>
+                    <div class="w-full">
+                        <img class="w-full"
+                             src="img/ed_fund.png"
+                             alt="photo">
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <!--<section class="bg-gray-100 py-8">-->
-    <!--    <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">-->
-    <!--        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">-->
-    <!--            Pricing-->
-    <!--        </h1>-->
-    <!--        <div class="w-full mb-4">-->
-    <!--            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>-->
-    <!--        </div>-->
-    <!--        <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">-->
-    <!--            <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">-->
-    <!--                <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">-->
-    <!--                    <div class="p-8 text-3xl font-bold text-center border-b-4">-->
-    <!--                        Free-->
-    <!--                    </div>-->
-    <!--                    <ul class="w-full text-center text-sm">-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-    <!--                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">-->
-    <!--                    <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">-->
-    <!--                        £0-->
-    <!--                        <span class="text-base">for one user</span>-->
-    <!--                    </div>-->
-    <!--                    <div class="flex items-center justify-center">-->
-    <!--                        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">-->
-    <!--                            Sign Up-->
-    <!--                        </button>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">-->
-    <!--                <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">-->
-    <!--                    <div class="w-full p-8 text-3xl font-bold text-center">Basic</div>-->
-    <!--                    <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>-->
-    <!--                    <ul class="w-full text-center text-base font-bold">-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-    <!--                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">-->
-    <!--                    <div class="w-full pt-6 text-4xl font-bold text-center">-->
-    <!--                        £x.99-->
-    <!--                        <span class="text-base">/ per user</span>-->
-    <!--                    </div>-->
-    <!--                    <div class="flex items-center justify-center">-->
-    <!--                        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">-->
-    <!--                            Sign Up-->
-    <!--                        </button>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">-->
-    <!--                <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">-->
-    <!--                    <div class="p-8 text-3xl font-bold text-center border-b-4">-->
-    <!--                        Pro-->
-    <!--                    </div>-->
-    <!--                    <ul class="w-full text-center text-sm">-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                        <li class="border-b py-4">Thing</li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-    <!--                <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">-->
-    <!--                    <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">-->
-    <!--                        £x.99-->
-    <!--                        <span class="text-base">/ per user</span>-->
-    <!--                    </div>-->
-    <!--                    <div class="flex items-center justify-center">-->
-    <!--                        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">-->
-    <!--                            Sign Up-->
-    <!--                        </button>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</section>-->
-    <!-- Change the colour #f8fafc to match the previous section colour -->
-    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
-         xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-                <g class="wave" fill="#f8fafc">
-                    <path
-                            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
-                    ></path>
-                </g>
-                <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-                    <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
-                        <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                              opacity="0.100000001"></path>
-                        <path
-                                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                                opacity="0.100000001"
-                        ></path>
-                        <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                              opacity="0.200000003"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </svg>
-    <section class="container mx-auto text-center py-6 mb-12">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-            Call to Action
-        </h1>
-        <div class="w-full mb-4">
-            <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <h3 class="my-4 text-3xl leading-tight">
-            Main Hero Message to sell yourself!
-        </h3>
-        <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            Action!
-        </button>
-    </section>
+
+
 
 </main>
 
