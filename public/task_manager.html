@@ -185,8 +185,7 @@
         </div>
 
 
-
-        <!--tabs beginning-->
+        <!--Tabs beginning-->
         <div class="hero">
             <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20 mb-3 mt-4">
                 <div class="btn-group">
@@ -259,15 +258,11 @@
                 </button>
             </div>
         </div>
-        <!--tabs beginning-->
-
-
+        <!--Tabs end-->
 
 
         <!--Table and dropdown start-->
-
         <div class=" flex mb-20">
-
 
             <div class="container mx-auto w-full py-6 px-4" x-data="datatables()" x-cloak>
                 <div x-show="selectedRows.length" class="bg-teal-200 fixed top-0 left-0 right-0 z-40 w-full shadow">
@@ -350,7 +345,6 @@
                 <div class="overflow-x-auto bg-white rounded-lg shadow overflow-y-auto relative"
                      style="height: 405px;">
 
-
                     <div role="region" aria-labelledby="caption" tabindex="0" class="task-manager">
                         <table class="border-collapse table-auto w-full whitespace-no-wrap bg-white table-striped relative">
                             <thead>
@@ -379,18 +373,6 @@
                                     <span class="text-gray-700 px-6 py-3 flex items-center"
                                           x-text="user.name"></span>
                                     </th>
-                                    <!--                            <td class="border-dashed border-t border-gray-200 lastName">-->
-                                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center" x-text="user.lastName"></span>-->
-                                    <!--                            </td>-->
-
-
-                                    <!--                            Iterate through tasks-->
-                                    <!--                            <template x-for="task in headings_tasks" :key="task.taskId">-->
-                                    <!--                                <td class="border-dashed border-t border-gray-200">-->
-                                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                                    <!--                                </td>-->
-                                    <!--                            </template>-->
 
                                     <td class="border-dashed border-t border-gray-200">
                                                         <span class="text-gray-700 px-6 py-3 flex items-center"
@@ -430,251 +412,173 @@
                         </table>
                     </div>
 
-
-                    <!--                <table class="border-collapse table-auto w-full whitespace-no-wrap bg-white table-striped relative">-->
-                    <!--                    <thead>-->
-                    <!--                    <tr class="text-left">-->
-                    <!--                        <template x-for="heading in headings_names">-->
-                    <!--                            <th class="bg-gray-100 sticky top-0 border-b border-gray-200 px-6 py-2 text-gray-600 font-bold tracking-wider w-1.5 uppercase text-xs"-->
-                    <!--                                :x-ref="heading.key" :class="{ [heading.key]: true }">-->
-                    <!--                                <span x-text="heading.value"></span>-->
-                    <!--                            </th>-->
-                    <!--                        </template>-->
-
-                    <!--                        <template x-for="heading in headings_tasks">-->
-                    <!--                            <th class="bg-gray-100 sticky top-0 border-b border-gray-200 px-6 py-2 text-gray-600 font-bold tracking-wider uppercase text-xs"-->
-                    <!--                                :x-ref="heading.key" :class="{ [heading.key]: true }">-->
-                    <!--                                <div :data-tip="heading.task_name" class="tooltip tooltip-bottom">-->
-                    <!--                                    <span x-text="heading.value"></span>-->
-                    <!--                                </div>-->
-                    <!--                            </th>-->
-                    <!--                        </template>-->
-                    <!--                    </tr>-->
-                    <!--                    </thead>-->
-                    <!--                    <tbody>-->
-                    <!--                    <template x-for="user in users" :key="user.userId">-->
-                    <!--                        <tr>-->
-                    <!--                            <td class="border-dashed border-t border-gray-200 firstName">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center" x-text="user.firstName"></span>-->
-                    <!--                            </td>-->
-                    <!--&lt;!&ndash;                            <td class="border-dashed border-t border-gray-200 lastName">&ndash;&gt;-->
-                    <!--&lt;!&ndash;                                <span class="text-gray-700 px-6 py-3 flex items-center" x-text="user.lastName"></span>&ndash;&gt;-->
-                    <!--&lt;!&ndash;                            </td>&ndash;&gt;-->
-
-
-                    <!--                            &lt;!&ndash;                            Iterate through tasks&ndash;&gt;-->
-                    <!--                            &lt;!&ndash;                            <template x-for="task in headings_tasks" :key="task.taskId">&ndash;&gt;-->
-                    <!--                            &lt;!&ndash;                                <td class="border-dashed border-t border-gray-200">&ndash;&gt;-->
-                    <!--                            &lt;!&ndash;                                <span class="text-gray-700 px-6 py-3 flex items-center"&ndash;&gt;-->
-                    <!--                            &lt;!&ndash;                                      :class="user.resultColor">&nbsp;</span>&ndash;&gt;-->
-                    <!--                            &lt;!&ndash;                                </td>&ndash;&gt;-->
-                    <!--                            &lt;!&ndash;                            </template>&ndash;&gt;-->
-
-                    <!--                            <td class="border-dashed border-t border-gray-200">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                    <!--                            </td>-->
-                    <!--                            <td class="border-dashed border-t border-gray-200">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                    <!--                            </td>-->
-                    <!--                            <td class="border-dashed border-t border-gray-200">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                    <!--                            </td>-->
-                    <!--                            <td class="border-dashed border-t border-gray-200">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                    <!--                            </td>-->
-                    <!--                            <td class="border-dashed border-t border-gray-200">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                    <!--                            </td>-->
-                    <!--                            <td class="border-dashed border-t border-gray-200">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                    <!--                            </td>-->
-                    <!--                            <td class="border-dashed border-t border-gray-200">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                    <!--                            </td>-->
-                    <!--                            <td class="border-dashed border-t border-gray-200">-->
-                    <!--                                <span class="text-gray-700 px-6 py-3 flex items-center"-->
-                    <!--                                      :class="user.resultColor">&nbsp;</span>-->
-                    <!--                            </td>-->
-                    <!--                        </tr>-->
-                    <!--                    </template>-->
-                    <!--                    </tbody>-->
-                    <!--                </table>-->
                 </div>
             </div>
 
             <script>
-                function datatables() {
-                    return {
-                        headings_name: [
-                            {
-                                'key': 'name',
-                                'value': 'name'
-                            }
-                        ],
-                        headings_tasks: [
-                            {
-                                'key': 'task_1',
-                                'value': '22.10',
-                                'task_name': 'Task 1'
-                            },
-                            {
-                                'key': 'task_2',
-                                'value': '23.10',
-                                'task_name': 'Task 2'
-                            },
-                            {
-                                'key': 'task_3',
-                                'value': '24.10',
-                                'task_name': 'Task 3'
-                            },
-                            {
-                                'key': 'task_4',
-                                'value': '25.10',
-                                'task_name': 'Task 4'
-                            },
-                            {
-                                'key': 'task_5',
-                                'value': '25.10',
-                                'task_name': 'Task 5'
-                            },
-                            {
-                                'key': 'task_6',
-                                'value': '26.10',
-                                'task_name': 'Task 6'
-                            },
-                            {
-                                'key': 'task_7',
-                                'value': '27.10',
-                                'task_name': 'Task 7'
-                            },
-                            {
-                                'key': 'task_8',
-                                'value': '28.10',
-                                'task_name': 'Task 8'
-                            }
-                        ],
-                        users: [{
-                            "userId": 1,
-                            "name": "Cort Tosh",
-                            "resultColor": "bg-accent",
-                        }, {
-                            "userId": 2,
-                            "name": "Brianne Dzeniskevich",
-                            "resultColor": "bg-info",
-                        }, {
-                            "userId": 3,
-                            "name": "Isadore Botler",
-                            "resultColor": "bg-info",
-                        }, {
-                            "userId": 4,
-                            "name": "Janaya Klosges",
-                            "resultColor": "bg-info",
-                        }, {
-                            "userId": 5,
-                            "name": "Freddi Di Claudio",
-                            "resultColor": "bg-warning",
-                        }, {
-                            "userId": 6,
-                            "name": "Oliy Mairs",
-                            "resultColor": "bg-warning",
-                        }, {
-                            "userId": 7,
-                            "name": "Tabb Wiseman",
-                            "resultColor": "bg-warning",
-                        }, {
-                            "userId": 8,
-                            "name": "Joela Betteriss",
-                            "resultColor": "bg-error",
-                        }, {
-                            "userId": 9,
-                            "name": "Alistair Vasyagin",
-                            "resultColor": "bg-error",
-                        }, {
-                            "userId": 10,
-                            "name": "Nealon Ratray",
-                            "resultColor": "bg-accent",
-                        }, {
-                            "userId": 11,
-                            "name": "Annissa Kissick",
-                            "resultColor": "bg-accent",
-                        }, {
-                            "userId": 12,
-                            "name": "Nissie Sidnell",
-                            "resultColor": "bg-accent",
-                        }, {
-                            "userId": 13,
-                            "name": "Madalena Fouch",
-                            "resultColor": "bg-accent",
-                        }, {
-                            "userId": 14,
-                            "name": "Rozina Atkins",
-                            "resultColor": "bg-accent",
-                        }, {
-                            "userId": 15,
-                            "name": "Lorelle Sandcroft",
-                            "resultColor": "bg-accent",
-                        }],
-                        selectedRows: [],
-
-                        open: false,
-
-                        toggleColumn(key) {
-                            // Note: All td must have the same class name as the headings key!
-                            let columns = document.querySelectorAll('.' + key);
-
-                            if (this.$refs[key].classList.contains('hidden') && this.$refs[key].classList.contains(key)) {
-                                columns.forEach(column => {
-                                    column.classList.remove('hidden');
-                                });
-                            } else {
-                                columns.forEach(column => {
-                                    column.classList.add('hidden');
-                                });
-                            }
-                        },
-
-                        getRowDetail($event, id) {
-                            let rows = this.selectedRows;
-
-                            if (rows.includes(id)) {
-                                let index = rows.indexOf(id);
-                                rows.splice(index, 1);
-                            } else {
-                                rows.push(id);
-                            }
-                        },
-
-                        selectAllCheckbox($event) {
-                            let columns = document.querySelectorAll('.rowCheckbox');
-
-                            this.selectedRows = [];
-
-                            if ($event.target.checked == true) {
-                                columns.forEach(column => {
-                                    column.checked = true
-                                    this.selectedRows.push(parseInt(column.name))
-                                });
-                            } else {
-                                columns.forEach(column => {
-                                    column.checked = false
-                                });
-                                this.selectedRows = [];
-                            }
-                        }
+              function datatables() {
+                return {
+                  headings_name: [
+                    {
+                      'key': 'name',
+                      'value': 'name'
                     }
+                  ],
+                  headings_tasks: [
+                    {
+                      'key': 'task_1',
+                      'value': '22.10',
+                      'task_name': 'Task 1'
+                    },
+                    {
+                      'key': 'task_2',
+                      'value': '23.10',
+                      'task_name': 'Task 2'
+                    },
+                    {
+                      'key': 'task_3',
+                      'value': '24.10',
+                      'task_name': 'Task 3'
+                    },
+                    {
+                      'key': 'task_4',
+                      'value': '25.10',
+                      'task_name': 'Task 4'
+                    },
+                    {
+                      'key': 'task_5',
+                      'value': '25.10',
+                      'task_name': 'Task 5'
+                    },
+                    {
+                      'key': 'task_6',
+                      'value': '26.10',
+                      'task_name': 'Task 6'
+                    },
+                    {
+                      'key': 'task_7',
+                      'value': '27.10',
+                      'task_name': 'Task 7'
+                    },
+                    {
+                      'key': 'task_8',
+                      'value': '28.10',
+                      'task_name': 'Task 8'
+                    }
+                  ],
+                  users: [{
+                    "userId": 1,
+                    "name": "Cort Tosh",
+                    "resultColor": "bg-accent",
+                  }, {
+                    "userId": 2,
+                    "name": "Brianne Dzeniskevich",
+                    "resultColor": "bg-info",
+                  }, {
+                    "userId": 3,
+                    "name": "Isadore Botler",
+                    "resultColor": "bg-info",
+                  }, {
+                    "userId": 4,
+                    "name": "Janaya Klosges",
+                    "resultColor": "bg-info",
+                  }, {
+                    "userId": 5,
+                    "name": "Freddi Di Claudio",
+                    "resultColor": "bg-warning",
+                  }, {
+                    "userId": 6,
+                    "name": "Oliy Mairs",
+                    "resultColor": "bg-warning",
+                  }, {
+                    "userId": 7,
+                    "name": "Tabb Wiseman",
+                    "resultColor": "bg-warning",
+                  }, {
+                    "userId": 8,
+                    "name": "Joela Betteriss",
+                    "resultColor": "bg-error",
+                  }, {
+                    "userId": 9,
+                    "name": "Alistair Vasyagin",
+                    "resultColor": "bg-error",
+                  }, {
+                    "userId": 10,
+                    "name": "Nealon Ratray",
+                    "resultColor": "bg-accent",
+                  }, {
+                    "userId": 11,
+                    "name": "Annissa Kissick",
+                    "resultColor": "bg-accent",
+                  }, {
+                    "userId": 12,
+                    "name": "Nissie Sidnell",
+                    "resultColor": "bg-accent",
+                  }, {
+                    "userId": 13,
+                    "name": "Madalena Fouch",
+                    "resultColor": "bg-accent",
+                  }, {
+                    "userId": 14,
+                    "name": "Rozina Atkins",
+                    "resultColor": "bg-accent",
+                  }, {
+                    "userId": 15,
+                    "name": "Lorelle Sandcroft",
+                    "resultColor": "bg-accent",
+                  }],
+                  selectedRows: [],
+
+                  open: false,
+
+                  toggleColumn(key) {
+                    let columns = document.querySelectorAll('.' + key);
+
+                    if (this.$refs[key].classList.contains('hidden') && this.$refs[key].classList.contains(key)) {
+                      columns.forEach(column => {
+                        column.classList.remove('hidden');
+                      });
+                    } else {
+                      columns.forEach(column => {
+                        column.classList.add('hidden');
+                      });
+                    }
+                  },
+
+                  getRowDetail($event, id) {
+                    let rows = this.selectedRows;
+
+                    if (rows.includes(id)) {
+                      let index = rows.indexOf(id);
+                      rows.splice(index, 1);
+                    } else {
+                      rows.push(id);
+                    }
+                  },
+
+                  selectAllCheckbox($event) {
+                    let columns = document.querySelectorAll('.rowCheckbox');
+
+                    this.selectedRows = [];
+
+                    if ($event.target.checked == true) {
+                      columns.forEach(column => {
+                        column.checked = true
+                        this.selectedRows.push(parseInt(column.name))
+                      });
+                    } else {
+                      columns.forEach(column => {
+                        column.checked = false
+                      });
+                      this.selectedRows = [];
+                    }
+                  }
                 }
+              }
             </script>
         </div>
     </section>
-
-        <!--Table and dropdown end-->
+    <!--Table and dropdown end-->
 </main>
 
 
