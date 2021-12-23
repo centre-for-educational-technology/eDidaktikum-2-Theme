@@ -1,9 +1,5 @@
 # 🎓 eDidaktikum 2 Theme
 
-by
-[@GlebRed]( https://github.com/glebred ) &
-[@gaplevski]( https://github.com/gaplevski )
-
 ![preview](https://github.com/centre-for-educational-technology/edidaktikum2_theme/raw/master/preview.png)
 
 Based on **Tailwind 3** and **Daisy**
