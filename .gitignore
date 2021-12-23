@@ -3,3 +3,4 @@ public/build
 yarn.lock
 .vscode
 .idea
+public/.sass-cache
