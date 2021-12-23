@@ -1,6 +1,6 @@
 # 🎓 eDidaktikum 2 Theme
 
-![preview](https://github.com/centre-for-educational-technology/edidaktikum2_theme/raw/master/preview.png)
+![preview](https://github.com/centre-for-educational-technology/eDidaktikum-2-Theme/raw/master/preview.png)
 
 Based on **Tailwind 3** and **Daisy**
 
