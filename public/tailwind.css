@@ -12,7 +12,7 @@ h3 {
   @apply text-2xl mb-5; }
 
 .gradient {
-  background: linear-gradient(120deg, #79bdaf 0%, #3e4d57 100%); }
+  background: linear-gradient(120deg, #79bdaf 0%, #e1ecf3 100%); }
 
 .task-manager table {
   table-layout: fixed; }

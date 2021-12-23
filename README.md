@@ -1,17 +1,22 @@
-# 🌼 Tailwind Boilerplate with DaisyUI
+# 🎓 eDidaktikum 2 Theme
 
-A simple starter project for playing around with Tailwind in a proper PostCSS environment.
+by
+[@GlebRed]( https://github.com/glebred ) &
+[@gaplevski]( https://github.com/gaplevski )
 
-To get started:
+![preview](https://github.com/centre-for-educational-technology/edidaktikum2_theme/raw/master/preview.png)
+
+Based on **Tailwind 3** and **Daisy**
+
+No PostCSS, Tailwind CLI only 🙌
+
+## To get started:
 
 1. Install the dependencies:
 
    ```bash
    # Using npm
    npm install
-
-   # Using Yarn
-   yarn
    ```
 
 2. Start the development server:
@@ -19,27 +24,8 @@ To get started:
    ```bash
    # Using npm
    npm run serve
-
-   # Using Yarn
-   yarn serve
    ```
 
-   Now you should be able to see the project running at localhost:8080.
+This will generate a `build` directory with the compiled CSS file.
 
-4. Open `public/index.html` in your editor and start experimenting!
-
-## Building for production
-
-Even though this isn't necessarily a starter kit for a proper project, we've included an example of setting up [cssnano](https://cssnano.co/) to optimize your CSS for production.
-
-To build an optimized version of your CSS, simply run:
-
-```bash
-# Using npm
-npm run production
-
-# Using Yarn
-yarn production
-```
-
-After that's done, check out `./public/build/tailwind.css` to see the optimized output.
+Now you should be able to see the project running at localhost:8080
