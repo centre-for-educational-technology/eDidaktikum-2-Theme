@@ -26,4 +26,4 @@ No PostCSS, Tailwind CLI only 🙌
 
 This will generate a `build` directory with the compiled CSS file.
 
-Now you should be able to see the project running at localhost:8080
+Now you should be able to see the project running at `localhost:8080`
