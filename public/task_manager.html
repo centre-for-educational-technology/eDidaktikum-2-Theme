@@ -10,16 +10,15 @@
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#1abc9c">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
     <link rel="stylesheet" href="/build/style.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
     <title>eDidaktikum</title>
 </head>
-<body class="antialiased bg-base-200">
+<body class="antialiased bg-base-200" x-data="{ mobile_nav_open: false }">
 
 
 <!--Nav-->
-<input id="mobile-drawer" type="checkbox" class="drawer-toggle">
+<input id="mobile-drawer" type="checkbox" class="drawer-toggle" @click="mobile_nav_open = !mobile_nav_open">
 <nav id="header" class="w-full z-30 top-0 drawer-content">
 
 
@@ -118,7 +117,7 @@
     </div>
 
 </nav>
-<div class="drawer-side absolute w-full z-50">
+<div class="drawer-side absolute w-full" :class="mobile_nav_open ? 'z-50' : '-z-50'">
     <label for="mobile-drawer" class="drawer-overlay"></label>
     <ul class="p-4 overflow-y-auto menu w-80 bg-base-100">
         <li><a href="dashboard.html">
@@ -187,7 +186,7 @@
 
         <!--Tabs beginning-->
         <div class="hero">
-            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 z-20 mb-3 mt-4">
+            <div class="mx-auto py-10 px-4 sm:px-6 lg:py-10 lg:px-8 mb-3 mt-4">
                 <div class="btn-group">
                     <button class="btn btn-outline btn-xl ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24"
@@ -239,7 +238,7 @@
         </div>
 
         <div class="flex mb-1">
-            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 z-20 ">
+            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 ">
                 <button class="btn">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24"
                          stroke="currentColor">

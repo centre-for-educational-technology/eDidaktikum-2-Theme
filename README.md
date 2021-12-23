@@ -8,6 +8,8 @@ by
 
 Based on **Tailwind 3** and **Daisy**
 
+Relies on **AlpineJS**
+
 No PostCSS, Tailwind CLI only 🙌
 
 ## To get started:
