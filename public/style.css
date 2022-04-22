@@ -45,4 +45,11 @@ h3 {
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
   outline: 0; }
 
+.menu > :where(li) > :where(ul) {
+  left: 0%;
+  top: 100%; }
+
+.card img {
+  width: fill-available; }
+
 /*# sourceMappingURL=style.css.map */

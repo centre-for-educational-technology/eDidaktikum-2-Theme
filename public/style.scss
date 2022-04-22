@@ -68,3 +68,12 @@ h3 {
   }
 
 }
+
+.menu > :where(li) > :where(ul) {
+  left: 0%;
+  top: 100%;
+}
+
+.card img {
+  width: fill-available;
+}

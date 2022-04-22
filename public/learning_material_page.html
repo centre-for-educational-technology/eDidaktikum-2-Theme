@@ -17,7 +17,6 @@
 </head>
 <body class="antialiased bg-base-200 dark:bg-gray-800" x-data="{ mobile_nav_open: false }">
 
-
 <!--Nav-->
 <input id="mobile-drawer" type="checkbox" class="drawer-toggle" @click="mobile_nav_open = !mobile_nav_open">
 <nav id="header" class="w-full z-30 top-0 drawer-content">
@@ -55,7 +54,7 @@
                             </svg>
                             Dashboard
                         </a>
-                        <a class="btn btn-active btn-ghost btn-sm rounded-btn" href="learning_materials_listing.html">
+                        <a class="btn btn-ghost btn-sm rounded-btn" href="learning_materials_listing.html">
 
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block w-5 mr-2 stroke-current"
                                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -211,9 +210,10 @@
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-14">
         <div class="text-center">
             <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-neutral dark:text-white">
-                Informaatika didaktika
+                Vestmik õpetajatöö fraasidega
             </h1>
         </div>
+
 
         <!--Tabs beginning-->
         <div class="hero">
@@ -258,6 +258,7 @@
                             </svg>
                             Ülesannete Haldur
                         </a>
+
                     </li>
                     <li>
                         <a href="task_manager.html">
@@ -308,77 +309,114 @@
         </div>
         <!--Tabs end-->
 
-
-        <!--Materials start-->
-        <div class="lg:w-full container mx-auto flex flex-wrap lg:mt-10 mb-1 ">
-
-            <div class="card lg:card-side lg:w-full max-w-fit bg-white mb-7 shadow-2xl">
-                <figure>
-                    <img class="h-full" src="https://picsum.photos/id/0/400/250">
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title"><a href="learning_material_page.html">Vestmik õpetajatöö fraasidega</a></h2>
-                    <p>Uurimuse strateegia (juhtumiuuring ehk case study, survey, experiment, grounded theory, action
-                        research, ethnography, phenomenography, narrative research)</p>
-                    <div class="card-actions justify-end">
-                        <a href="learning_material_page.html" class="btn btn-primary">Loe edasi</a>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card lg:card-side lg:w-full  bg-white mb-7 shadow-2xl">
-                <figure>
-                    <img class="h-full" src="https://picsum.photos/id/0/400/250">
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title"><a href="learning_material_page.html">Vestmik õpetajatöö fraasidega</a></h2>
-                    <p>Uurimuse strateegia (juhtumiuuring ehk case study, survey, experiment, grounded theory, action
-                        research, ethnography, phenomenography, narrative research)</p>
-                    <div class="card-actions justify-end">
-                        <a href="learning_material_page.html" class="btn btn-primary">Loe edasi</a>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="card lg:card-side lg:w-full  bg-white mb-7 shadow-2xl">
-                <figure>
-                    <img class="h-full" src="https://picsum.photos/id/0/400/250">
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title"><a href="learning_material_page.html">Vestmik õpetajatöö fraasidega</a></h2>
-                    <p>Uurimuse strateegia (juhtumiuuring ehk case study, survey, experiment, grounded theory, action
-                        research, ethnography, phenomenography, narrative research)</p>
-                    <div class="card-actions justify-end">
-                        <a href="learning_material_page.html" class="btn btn-primary">Loe edasi</a>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!--Materials end-->
-
-
-        <!--Pagination-->
-        <div class="flex pb-2 ">
-            <div class="mx-auto px-4 sm:px-6 lg:py-10 lg:px-8 mt-8  ">
-                <div class="btn-group ">
-                    <button class="btn">Previous</button>
-                    <button class="btn">1</button>
-                    <button class="btn btn-primary">2</button>
-                    <button class="btn">3</button>
-                    <button class="btn">4</button>
-                    <button class="btn">Next</button>
-                </div>
-            </div>
-        </div>
-        <!--Pagination end-->
-
     </section>
 
+
+    <div class="max-w-screen-lg mx-auto">
+
+        <main class="mt-1">
+
+            <div class="mb-4 md:mb-0 w-full mx-auto relative">
+
+                <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                     class="w-full object-cover lg:rounded" style="height: 26em;"/>
+            </div>
+
+            <div class="flex flex-col lg:flex-row lg:space-x-12">
+
+                <div class="px-4 prose dark:text-white lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
+                    <div class="mb-20">
+                        <h2 class="dark:text-white" id="what-to-expect-from-here-on-out"><a aria-hidden="true"
+                                                                                            tabindex="-1"
+                                                                                            href="#what-to-expect-from-here-on-out"></a>Mis
+                            on
+                            Inglise keeles keksikaalne klaster?</h2>
+                        <p>A leksikaalne klaster on seotud sõnade kogum, millel on statistiliselt sarnased seoste
+                            struktuurid teiste sõnadega. Seotud sõnadel, nagu kuld, hõbe ja silaadium, on omadus, et
+                            neid kõiki saab kasutada sarnastes fraasides.
+
+                            Mis on selles osas leksikaalne lähenemine inglise keele õpetamisele?
+
+                            The leksikaalne lähenemine on meetod õpetamine võõrkeeled, mida kirjeldas Michael Lewis
+                            1990. aastate alguses. Põhikontseptsioon, millel see lähenemine puhkab idee, mille oluline
+                            osa õppimine keel seisneb suutlikkuses mõista ja toota leksikaalne fraasid tükkidena.</p>
+                        <p>Seotud küsimuste vastused:</p>
+                        <ol>
+                            <li>Mis on leksikaalse mitmetähenduslikkuse näited?</li>
+                            <li>Mis on kogu keele lähenemine lugemisele?</li>
+                            <li>Mis on leksikaalne lähenemine isiksusele?
+                            </li>
+                        </ol>
+                        <h3 class="dark:text-white" id="typography-should-be-easy"><a aria-hidden="true" tabindex="-1"
+                                                                                      href="#typography-should-be-easy"></a>Mis
+                            vahe on leksikaalsel ja semantilisel?</h3>
+                        <p>The leksikaalne väli uurib sõnade morfoloogiat või nende kuju, vormi ja ehitust. Seetõttu on
+                            leksikaalne valdkond pole mitte ainult uuring, vaid ka teooria omaette. Järelikult pole need
+                            samad. Semantika on sõnade tähenduse uurimine, morfoloogia aga sõnade ehituse uurimine.</p>
+
+                        <blockquote class="dark:text-white"><p>Määratlus a leksikon on sõnaraamat või keele, rahva või
+                            aine sõnavara. An
+                            leksikoni näide on YourDictionary.com. An leksikoni näide on meditsiiniterminite kogum.</p>
+                        </blockquote>
+                        <p>Leksikon lausenäited:</p>
+                        <p><img src="https://api.lorem.space/image/book?w=800&amp;h=500" alt="Sample Image"></p>
+                        <p>Kuidas kasutada leksikonit lauses?</p>
+                        <ul>
+                            <li>Ainus valminud leksikon (peale Naudeti indeksid, 1832 ja Weise, 1838) on Pareuse oma (2.
+                                väljaanne, 1634).
+                            </li>
+                            <li>See leksikon on oma rikkalikkuse tõttu eriti oluline.</li>
+                            <li>Sest ükski leksikoni märgisüsteem ei suuda öelda, kuidas sõna hääldada.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card h-full w-96 bg-base-100 mb-40 shadow-xl w-full lg:w-4/12 m-auto mt-12 max-w-screen-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Grupp</h2>
+                        <p class="mb-5">Informaatika didaktika</p>
+
+                        <h2 class="card-title">Autorid</h2>
+                        <div class="avatar-group mb-5 -space-x-6">
+                            <div class="avatar">
+                                <div class="w-12">
+                                    <img src="https://api.lorem.space/image/face?hash=53273"/>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <div class="w-12">
+                                    <img src="https://api.lorem.space/image/face?hash=91831"/>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <div class="w-12">
+                                    <img src="https://api.lorem.space/image/face?hash=27312"/>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <div class="w-12">
+                                    <img src="https://api.lorem.space/image/face?hash=26448"/>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h2 class="card-title">Õppematerjali tüüp</h2>
+                        <p class="mb-5">Muu</p>
+
+
+                        <h2 class="card-title">Keel</h2>
+                        <p>Eesti keel</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main ends here -->
+
+
+    </div>
 
 </main>
 

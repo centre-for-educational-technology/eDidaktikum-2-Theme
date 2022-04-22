@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   purge: ["./public/**/*.html"],
   theme: {
     fontFamily: {
@@ -8,6 +9,7 @@ module.exports = {
   variants: {},
   plugins: [
     require('@tailwindcss/typography'),
+    require('flowbite/plugin'),
     require('daisyui'),
   ],
   daisyui: {
